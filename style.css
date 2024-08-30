@@ -60,5 +60,60 @@ h6 {
 #__next {
   isolation: isolate;
 }
+html,
+body {
+  height: 100%;
+}
 
 /* ------Main------ */
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+}
+#container {
+  background-color: rgb(255, 184, 184);
+  width: 60vw;
+  height: 70vh;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+.marker_container {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marker {
+  width: 60%;
+  height: 60%;
+}
+
+.btn {
+  background-color: rgb(255, 184, 184);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  padding: 0.6em 1em;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(212, 100, 100);
+  border: 2px solid rgb(255, 184, 184);
+}
